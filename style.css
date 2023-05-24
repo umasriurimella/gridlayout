@@ -1,0 +1,68 @@
+.container{
+    display:grid;
+    width:20%;
+    height: 60vh;
+    grid-template-areas: "header header header header"
+                         "navigation navigation navigation navigation"
+                         "main main main main"
+                         "sidebar sidebar sidebar sidebar"
+                         "ads ads ads ads"
+                         "footer footer footer footer";
+    gap: 3px; 
+ }   
+.header{            
+
+    grid-area: header;
+    border: 2px solid red;
+    border-radius: 5px; 
+    align-self: center;
+    padding:5px;
+
+}
+.navigation{
+    grid-area: navigation;
+    border: 2px solid red;
+    border-radius: 5px; 
+    align-self: center;
+    padding:5px;
+
+}
+.main{
+    grid-area: main;
+    border: 2px solid red;
+    border-radius: 5px; 
+    grid-row-start: 3;
+    grid-row-end: 9;
+    padding:5px;
+
+}
+.sidebar{
+    grid-area: sidebar;
+    border: 2px solid red;
+    border-radius: 5px; 
+    align-self: center;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    padding:5px;
+
+}
+.ads{
+    grid-area: ads;
+    border: 2px solid red;
+    border-radius: 5px; 
+    align-self: center;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    padding:5px;
+
+}
+.footer{
+    grid-area: footer;
+    border: 2px solid red;
+    border-radius: 5px; 
+    align-self: center;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    padding:5px;
+    
+}
